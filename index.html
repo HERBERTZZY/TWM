@@ -242,46 +242,17 @@
         
         <!-- Image with caption -->
         <div class="content has-text-centered">
-          <img src="static\images\pipeline.png"
+          <img src="figure\56.png"
                alt="pipeline"
                style="max-width: 70%; height: auto; border-radius: 10px; margin: 20px 0;">
           <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
-            The overall structure of State Space Model-based object Detector (SSM-Det), that is mainly composed of Backbone, Direction-aware Visual State-Space Encoder (D-VSSE), Split-Fusion (SF), Skip-Connection (SC), Transformer Decoder and Header. After feature extraction, D-VSSE performs the long-term dependency modeling at the expense of linear complexity, and SF-SC fuses multi-scale representations for cross-layer information interaction. Finally, Transformer Decoder adopts Uncertainty-minimal Query Selection and Detection Header for high-quality box prediction. The U, D and Rep mark Up-sampled, Down-sampled convolution and Re-parametrization.
+            Overview of the proposed Traffic World Model (TWM), a traffic-view multimodal data generation framework. Starting from textual traffic descriptions and structural road priors, the framework first synthesizes a controllable roadside-view image through a conditional Diffusion Transformer (cDiT) backbone. The generated image then serves as a shared scene anchor for subsequent multimodal generation tasks, including traffic-video synthesis, safety-critical event generation, depth prediction, and LiDAR generation.
           </p>
         </div>
       </div>
     </div>
     <!--/ pipeline Section Example. -->
 
-<!-- Quantitative Results Example. -->
-    <div class="columns is-centered has-text-centered" style="margin-top: 2rem;">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Quantitative Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            
-          </p>
-        </div>
-        
-        <!-- Image with caption -->
-        <div class="content has-text-centered">
-          <img src="static\images\table3.png"
-               alt="Visdrone 2019-DET"
-               style="max-width: 65%; height: auto; border-radius: 10px;">
-          <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
-            (a) Performance comparisons with the state-of-the-arts on the Visdrone 2019-DET.
-        </div>
-        <div class="content has-text-centered">
-          <img src="static\images\table4.png"
-               alt="seu_pml"
-               style="max-width: 65%; height: auto; border-radius: 10px;">
-          <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
-            (b) Performance comparisons with the state-of-the-arts on the SEU_PML dataset.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Quantitative Results Example. -->
 
 
 <!-- Quantitative Results Example. -->
@@ -296,64 +267,41 @@
         
         <!-- Image with caption -->
         <div class="content has-text-centered">
-          <img src="static\images\fig7-vis.jpg"
-               alt="Visdrone 2019-DET"
+          <img src="57.png"
+               alt="Image generation"
                style="max-width: 65%; height: auto; border-radius: 10px;">
           <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
-            (a) Performance comparisons with the state-of-the-arts on the Visdrone 2019-DET.
+            Qualitative results on image generation. Generated images across different road segments and weather conditions. The road layout and vehicle pose remain spatially consistent, while weather, illumination and atmospheric appearance are controllably varied.
         </div>
         <div class="content has-text-centered">
-          <img src="static\images\fig8-seu.jpg"
+          <img src="static\images\58.png"
                alt="seu_pml"
                style="max-width: 65%; height: auto; border-radius: 10px;">
           <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
-            (b) Performance comparisons with the state-of-the-arts on the SEU_PML dataset.
+            Qualitative results on video generation. Generated driving videos conditioned on different reference frames. The outputs preserve the visual characteristics of real camera footage, including realistic exposure, motion blur and sensor-like texture, rather than exhibiting an overly sharp or animation-like appearance. In rainy scenes, the generated videos further reproduce plausible water spray and mist effects.
           </p>
         </div>
+        <div class="content has-text-centered">
+          <img src="static\images\60.png"
+               alt="seu_pml"
+               style="max-width: 65%; height: auto; border-radius: 10px;">
+          <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
+            Qualitative results on event generation. The top row shows the original images, and the bottom row presents the corresponding edited results with inserted objects. The inserted objects (highlighted by red rectangle) are naturally integrated into the scene with realistic geometry, scale, lighting and occlusion, demonstrating support for a wide range of vehicles and roadside objects.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <img src="static\images\55.png"
+               alt="seu_pml"
+               style="max-width: 65%; height: auto; border-radius: 10px;">
+          <p class="has-text-centered" style="margin-top: 5px; font-style: normal; color: #000;">
+            Qualitative results on LiDAR generation. The generated point clouds capture realistic spatial structures and fine-grained geometric details, including road boundaries, vehicles and surrounding scene elements.
+          </p>
+        </div>        
       </div>
     </div>
     <!--/ Quantitative Results Example. -->
   
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Datasets. -->
-    <div class="columns is-centered has-text-centered" style="margin-top: -2rem;">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Datasets</h2>
-        <div class="content has-text-justified">
-          <ul>
-            <li>
-              <a href="https://github.com/VisDrone/VisDrone-Dataset" target="_blank">VisDrone2019-DET</a>
-            </li>
-            <li>
-              <a href="https://github.com/vvgoder/SEU_PML_Dataset" target="_blank">SEU_PML</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!--/ Datasets. -->
-  </div>
-</section>
-
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
-      @article{wangSSM-Det,
-        author={Wang, Jiaqi and Lin, Chunmian and Guo, Kan and Guo, Jiangang},
-        journal={IEEE Transactions on Intelligent Transportation Systems}, 
-        title={SSM-Det: State Space Model-Based Object Detector for Intelligent Transportation System}, 
-        year={2026},
-        volume={27},
-        number={4},
-        pages={4587--4597},
-        doi={10.1109/TITS.2025.3640934}}
-    </code></pre>
-  </div>
-</section>
 
 
 <footer class="footer">
