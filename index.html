@@ -88,23 +88,71 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">SSM-Det: State Space Model-based Object Detector for Intelligent Transportation System</h1>
+          <h1 class="title is-1 publication-title">TWM: Multimodal data generation engine via Traffic World Model</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href=" ">Jiaqi Wang</a><sup>1,3</sup>,</span>
+              <a href="">Zhenyu Zhang</a><sup>1,&dagger;</sup>,
+            </span>
             <span class="author-block">
-              <a href=" ">Chunmian Lin</a><sup>1*</sup>,</span>
+              <a href="">Jiaqi Wang</a><sup>1,2,3,&dagger;</sup>,
+            </span>
             <span class="author-block">
-              <a href=" ">Kan Guo</a><sup>2</sup>,</span>
+              <a href="">Chunmian Lin</a><sup>1,2,3,✉</sup>,
+            </span>
             <span class="author-block">
-              <a href=" ">Jiangang Guo</a><sup>3*</sup></span>
-            
+              <a href="">Lei Yang</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Chuang Zhang</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Zhanwen Liu</a><sup>6</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Jianshan Zhou</a><sup>1,2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Xuting Duan</a><sup>1,2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Kaige Qu</a><sup>1,2,3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Ruifa Luo</a><sup>7</sup>,
+            </span>
+            <span class="author-block">
+              <a href="">Daxin Tian</a><sup>1,2,3</sup>
+            </span>
           </div>
-
+          
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Beihang University,</span>
-            <span class="author-block"><sup>2</sup>Beijing University of Technology,</span>
-            <span class="author-block"><sup>3</sup>Fujian Agriculture and Forestry University</span>
+            <span class="author-block">
+              <sup>1</sup>School of Transportation Science and Engineering, Beihang University, Beijing 102206, China.
+            </span>
+            <span class="author-block">
+              <sup>2</sup>State Key Lab of Intelligent Transportation System, Beijing 102206, China.
+            </span>
+            <span class="author-block">
+              <sup>3</sup>Beijing Key Laboratory for Cooperative Vehicle Infrastructure Systems and Safety Control, Beijing 102206, China.
+            </span>
+            <span class="author-block">
+              <sup>4</sup>School of Mechanical and Aerospace Engineering, Nanyang Technological University, Singapore 569830, Singapore.
+            </span>
+            <span class="author-block">
+              <sup>5</sup>State Key Laboratory of Intelligent Green Vehicle and Mobility, Tsinghua University, Beijing 100084, China.
+            </span>
+            <span class="author-block">
+              <sup>6</sup>School of Information Engineering, Chang'an University, Xi'an 710000, China.
+            </span>
+            <span class="author-block">
+              <sup>7</sup>Shenzhen Genvict Technologies Co., Ltd, Shenzhen 518000, China.
+            </span>
+          </div>
+          
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">
+              <sup>&dagger;</sup>Zhenyu Zhang and Jiaqi Wang contributed equally to this work.
+            </span>
           </div>
 
           <div class="column has-text-centered">
@@ -173,7 +221,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The State Space Model (SSM) has been a growth of interest in computer vision due to its long-term dependency modeling with linear complexity. Despite massive endeavor, it has not been extensively explored in intelligent transportation system (ITS) yet. In this paper, we propose State Space Model-based object Detector (SSM-Det), that is meticulously curated with Direction-aware Visual State Space Encoder (D-VSSE). Specifically, it customizes multi-path pixel exchange and patch re-arrangement via four-direction scanning mechanism, promoting for information communication. To bridge the information bottleneck across high-low level, we further design Split-Fusion (SF) and Skip-Connection (SC) modules for contextual feature propagation before decoding: SF performs multi-channel semantic separation and re-weighting in global-local scope, while SC is responsible for cross-layer feature interaction in a cascaded manner. Empirical studies is conducted on both VisDrone2019-DET and SEU_PML benchmarks, and our proposed SSM-Det reports the state-of-the-art performance against all counterparts by a substantial margin, while maintaining the real-time inference speed. We hope this work contributes to the in-depth investigation of SSM-based detector for intelligent transportation applications.
+            Generative modeling has emerged as a mainstream paradigm for data synthesis, offering a promising solution to data scarcity and insufficient coverage of long-tail scenarios. Despite remarkable progresses in autonomous driving, its potential for traffic data generation from roadside or infrastructure perspective, remains largely underexplored. To this end, we propose the first traffic-oriented world model termed Traffic World Model (TWM), for controllable and high-fidelity multimodal data generation. It is built upon a unified conditional Diffusion Transformer (cDiT) architecture, which generates controllable roadside-view image from structured road-agent layout and then utilizes as the common visual foundation for subsequent multimodal synthesis. TWM jointly supports layout-to-image generation, image-to-video generation, safety-critical event generation, and image-to-LiDAR point-cloud generation, enabling controllable modeling of temporal evolution, traffic participant relationship, geometric topology within a coherent manner. Extensive experiments on several publicly-available and private datasets demonstrates TWM achieves the state-of-the-art performance in generation quality, controllability, and multimodal scalability among four tasks. We hope this work would serve as a scalable multimodal traffic scenario generation engine, and the code is open-sourced soon.
           </p>
         </div>
       </div>
